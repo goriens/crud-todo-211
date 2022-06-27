@@ -31,14 +31,32 @@ export const addTodoRequest = () => {
     type: Types.ADD_TODO_REQUEST,
   };
 };
-export const addTodoSuccess = () => {
+export const addTodoSuccess = (payload) => {
   return {
     type: Types.ADD_TODO_SUCCESS,
+    payload,
   };
 };
 export const addTodoFailure = () => {
   return {
     type: Types.ADD_TODO_FAILURE,
+  };
+};
+//todo status
+export const toggleTodoRequest = () => {
+  return {
+    type: Types.TOGGLE_TODO_REQUEST,
+  };
+};
+export const toggleTodoSuccess = (payload) => {
+  return {
+    type: Types.TOGGLE_TODO_SUCCESS,
+    payload,
+  };
+};
+export const toggleTodoFailure = () => {
+  return {
+    type: Types.TOGGLE_TODO_FAILURE,
   };
 };
 
